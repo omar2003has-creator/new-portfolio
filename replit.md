@@ -16,6 +16,19 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+### omar-portfolio (React + Vite)
+- **Path**: `artifacts/omar-portfolio/`
+- **Preview**: `/` (root)
+- **Description**: High-end personal portfolio for Omar Alakhras — Cyberpunk dark mode with neon purple/blue aesthetic
+- **Sections**: Hero, About, AI Journey (11-module timeline), Projects (placeholder cards), Contact, Footer
+- **Tech**: React, Vite, Tailwind CSS, Framer Motion, Orbitron font, react-icons
+
+### api-server (Express)
+- **Path**: `artifacts/api-server/`
+- **Preview**: `/api`
+
 ## Key Commands
 
 - `pnpm run typecheck` — full typecheck across all packages

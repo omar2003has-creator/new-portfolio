@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Omar Alakhras Portfolio"
+version = "1.0.0"
+id = "artifacts/omar-portfolio"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19064
+
+[services.development]
+run = "pnpm --filter @workspace/omar-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/omar-portfolio", "run", "build" ]
+publicDir = "artifacts/omar-portfolio/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19064"
+BASE_PATH = "/"
