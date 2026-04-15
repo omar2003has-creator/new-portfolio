@@ -3,9 +3,21 @@ import { Database, BrainCircuit, Activity } from "lucide-react";
 
 export function Projects() {
   const placeholders = [
-    { title: "AI Project 1", icon: BrainCircuit },
-    { title: "AI Project 2", icon: Activity },
-    { title: "Data Pipeline", icon: Database },
+    {
+      title: "AI & ML Foundations",
+      icon: BrainCircuit,
+      link: "https://github.com/omar2003has-creator/Engineering-Prework",
+    },
+    {
+      title: "PyTorch & Deep Learning",
+      icon: Activity,
+      link: "https://github.com/LevelUp-Applied-AI/m2-i2-pytorch-omar2003has-creator",
+    },
+    {
+      title: "Data Pipelines & SQL",
+      icon: Database,
+      link: "https://github.com/omar2003has-creator/SQL-Murder-Mystery",
+    },
   ];
 
   return (
@@ -34,19 +46,29 @@ export function Projects() {
                 transition={{ delay: index * 0.2 }}
                 className="relative aspect-video rounded-lg border-2 border-dashed border-primary/40 bg-card/20 flex flex-col items-center justify-center p-6 overflow-hidden group hover:border-primary/80 transition-colors"
               >
-                {/* Shimmer effect */}
                 <div className="absolute inset-0 -translate-x-full animate-[shimmer_2s_infinite] bg-gradient-to-r from-transparent via-primary/5 to-transparent pointer-events-none"></div>
-                
-                <Icon size={48} className="text-primary/50 mb-4 group-hover:text-primary transition-colors" />
-                <h3 className="font-display text-xl font-medium text-white mb-2">{item.title}</h3>
-                
+
+                <Icon
+                  size={48}
+                  className="text-primary/50 mb-4 group-hover:text-primary transition-colors"
+                />
+                <h3 className="font-display text-xl font-medium text-white mb-2">
+                  {item.title}
+                </h3>
+
+                {/* 2. حولنا الطبقة الشفافة إلى رابط حقيقي */}
                 <div className="absolute inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="font-mono text-secondary px-4 py-2 border border-secondary rounded box-shadow-neon-blue">
-                    currently building...
-                  </span>
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-secondary px-4 py-2 border border-secondary rounded box-shadow-neon-blue hover:bg-secondary hover:text-background transition-all"
+                  >
+                    VIEW ON GITHUB
+                  </a>
                 </div>
               </motion.div>
-            )
+            );
           })}
         </div>
 
@@ -56,7 +78,7 @@ export function Projects() {
           viewport={{ once: true }}
           className="mt-12 text-center text-muted-foreground font-mono text-sm"
         >
-          <p>Currently building — check back soon.</p>
+          <p>Click on cards to explore the repositories.</p>
         </motion.div>
       </div>
     </section>
