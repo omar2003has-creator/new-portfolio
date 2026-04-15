@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Database, BrainCircuit, Activity } from "lucide-react";
+import { Database, BrainCircuit, Activity, ExternalLink } from "lucide-react";
 
 export function Projects() {
   const placeholders = [
@@ -52,11 +52,22 @@ export function Projects() {
                   size={48}
                   className="text-primary/50 mb-4 group-hover:text-primary transition-colors"
                 />
-                <h3 className="font-display text-xl font-medium text-white mb-2">
+                <h3 className="font-display text-xl font-medium text-white mb-1">
                   {item.title}
                 </h3>
 
-                {/* 2. حولنا الطبقة الشفافة إلى رابط حقيقي */}
+                {/* --- الرابط الذي يظهر دائماً تحت الاسم --- */}
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-secondary text-xs font-mono hover:underline flex items-center gap-1 mb-4 z-10"
+                >
+                  <ExternalLink size={12} />
+                  view source code
+                </a>
+                {/* -------------------------------------- */}
+
                 <div className="absolute inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={item.link}
