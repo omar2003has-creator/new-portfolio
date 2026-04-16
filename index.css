@@ -75,6 +75,8 @@
   }
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    margin: 0;
+    padding: 0;
   }
   html {
     scroll-behavior: smooth;
@@ -100,10 +102,23 @@
     background: linear-gradient(to bottom, transparent, rgba(176, 38, 255, 0.1) 50%, transparent);
     background-size: 100% 4px;
     pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 50;
   }
 }
 
-.bg-grid {
+/* Background grid */
+.page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: var(--background);
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
   background-size: 50px 50px;
   background-image: 
     linear-gradient(to right, rgba(176, 38, 255, 0.05) 1px, transparent 1px),
@@ -111,6 +126,7 @@
   mask-image: radial-gradient(ellipse at center, black, transparent 80%);
 }
 
+/* Glitch Effect */
 .glitch {
   position: relative;
   display: inline-block;
@@ -123,7 +139,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--background);
+  background: transparent;
 }
 
 .glitch::before {
@@ -140,20 +156,51 @@
   animation: glitch-anim2 5s infinite linear alternate-reverse;
 }
 
+/* Layout & Sections */
+.container {
+  @apply mx-auto px-6 relative z-10;
+  max-width: 1200px;
+}
+
 section {
   @apply relative py-20 overflow-hidden;
 }
 
-.container {
-  @apply mx-auto px-6 relative z-10;
-}
-
-article {
+/* Card Styling */
+.project-card, .info-card, .mini-card {
   @apply transition-all duration-300 hover:-translate-y-2;
   background: rgba(10, 10, 15, 0.8);
   backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
+  padding: 1.5rem;
+  border-radius: var(--radius);
 }
 
+.project-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 20px rgba(176, 38, 255, 0.2);
+}
+
+/* Typography & Colors */
+h1, h2, h3, .brand {
+  font-family: var(--app-font-display);
+  text-transform: uppercase;
+}
+
+h1 span, .brand span:last-child {
+  color: var(--secondary);
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.section-kicker {
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Animations */
 @keyframes glitch-anim {
   0% { clip: rect(10px, 9999px, 20px, 0); }
   20% { clip: rect(30px, 9999px, 40px, 0); }
@@ -169,4 +216,39 @@ article {
   50% { clip: rect(55px, 9999px, 65px, 0); }
   75% { clip: rect(75px, 9999px, 85px, 0); }
   100% { clip: rect(95px, 9999px, 5px, 0); }
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center font-bold transition-all duration-200 uppercase tracking-wider;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  @apply bg-primary text-primary-foreground box-shadow-neon-purple hover:brightness-110;
+}
+
+.btn-secondary {
+  @apply border border-secondary text-secondary hover:bg-secondary/10;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+}
+
+/* Navbar */
+.navbar {
+  @apply sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md py-4;
+}
+
+.nav-links a {
+  @apply hover:text-primary transition-colors duration-200 font-medium uppercase text-sm tracking-widest;
+}
+
+/* Hero Section Specifics */
+.hero-grid {
+  @apply grid md:grid-cols-2 gap-12 items-center;
+}
+
+.portrait-photo img {
+  @apply rounded-full border-2 border-primary grayscale hover:grayscale-0 transition-all duration-500;
+  box-shadow: 0 0 30px rgba(176, 38, 255, 0.3);
 }
