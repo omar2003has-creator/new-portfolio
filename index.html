@@ -7,38 +7,24 @@
   <meta name="description" content="Software Engineer | AI & Machine Learning Specialist | Building Intelligent Systems" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body class="theme-1">
-  <div class="loader" id="pageLoader" aria-hidden="true">
-    <div class="loader-inner">
-      <div class="loader-ring"></div>
-      <div class="loader-text">Omar Portfolio</div>
-    </div>
-  </div>
-
+  
   <div class="page-bg" aria-hidden="true">
     <div class="grid"></div>
-    <div class="glow glow-1"></div>
-    <div class="glow glow-2"></div>
-    <div class="glow glow-3"></div>
-    <div class="wave wave-a"></div>
-    <div class="wave wave-b"></div>
-    <div class="wave wave-c"></div>
-    <div class="particles">
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-    </div>
+    <div class="bg-scanline"></div>
   </div>
 
   <header class="topbar">
     <div class="container topbar-inner">
       <div class="top-links">
-        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#" target="_blank">LinkedIn</a>
         <a href="mailto:omar.alakhras@email.com">Email Me</a>
       </div>
       <div class="top-links">
-        <a href="https://github.com/OmarAlakhras" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/OmarAlakhras" target="_blank">GitHub</a>
         <span>Ain Al-Basha, Jordan</span>
       </div>
     </div>
@@ -50,26 +36,22 @@
         <span class="brand-icon"></span>
         <span>Omar Al-akhras</span>
       </a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
-
-      <div class="nav-links" id="navLinks">
+      <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </div>
-
-      <a class="btn btn-small btn-primary theme-button" href="#projects">View Work</a>
+      <a class="btn btn-small btn-primary" href="#projects">View Work</a>
     </div>
   </nav>
 
   <main>
-    <section class="hero reveal" id="home">
+    <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="section-kicker">SOFTWARE & AI ENGINEER</p>
-          <h1>
+          <h1 class="glitch" data-text="BUILDING INTELLIGENT SYSTEMS">
             Building <span>intelligent systems</span><br />
             through code and data.
           </h1>
@@ -77,135 +59,52 @@
             I am <strong>Omar Al-akhras</strong>, a Software Engineering student at Al-Balqa Applied University. 
             I specialize in developing robust back-end systems and pursuing the future of AI and Machine Learning.
           </p>
-
           <div class="hero-actions">
-            <a class="btn btn-primary theme-button" href="https://github.com/OmarAlakhras" target="_blank" rel="noopener noreferrer">View GitHub</a>
-            <a class="btn btn-secondary theme-button" href="#contact">Contact Me</a>
+            <a class="btn btn-primary" href="https://github.com/OmarAlakhras" target="_blank">View GitHub</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
           </div>
         </div>
 
-        <div class="hero-visual reveal-card">
-          <div class="visual-card">
-            <div class="visual-frame">
-              <div class="orbital orbital-1"></div>
-              <div class="portrait-shell">
-                <div class="portrait-ring">
-                  <div class="portrait-core portrait-photo">
-                    <div style="background: #222; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white;">OA</div>
-                  </div>
-                </div>
-              </div>
-              <div class="badge badge-left">C++ / Python</div>
-              <div class="badge badge-right">AI / ML</div>
-              <div class="badge badge-bottom">Backend Dev</div>
+        <div class="hero-visual">
+          <div class="visual-frame">
+            <div class="orbital"></div>
+            <div class="portrait-core">
+               <div style="background: #1a1a1a; width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Orbitron'; font-size: 3rem; color: var(--neon-blue);">OA</div>
             </div>
+            <div class="badge badge-left">C++ / Python</div>
+            <div class="badge badge-right">AI / ML</div>
+            <div class="badge badge-bottom">Backend Dev</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="projects section reveal" id="projects">
+    <section class="projects section" id="projects">
       <div class="container">
         <div class="section-heading centered">
           <p class="section-kicker">FEATURED WORK</p>
           <h2>Technical Projects</h2>
         </div>
-
         <div class="project-grid">
-          <article class="project-card tilt-card reveal-card">
-            <div class="project-top">
-              <span class="project-tag">Backend Development</span>
-              <span class="coming-soon">Project 1</span>
-            </div>
+          <article class="project-card">
             <h3>Simplified Banking System</h3>
-            <p>
-              Developed a backend system for managing financial accounts, processing transactions, 
-              and integrating SQL databases to ensure data persistence and security.
-            </p>
-            <div class="chips">
-              <span>C# / C++</span>
-              <span>SQL</span>
-              <span>API Design</span>
-            </div>
+            <p>Developed a backend system for managing financial accounts and SQL databases.</p>
+            <div class="chips"><span>C# / C++</span><span>SQL</span></div>
           </article>
-
-          <article class="project-card tilt-card reveal-card">
-            <div class="project-top">
-              <span class="project-tag">Data Science</span>
-              <span class="coming-soon">Project 2</span>
-            </div>
+          <article class="project-card">
             <h3>Public Transit Data Pipeline</h3>
-            <p>
-              Cleaned unstructured transit data and created analytical visualizations to identify 
-              ridership trends, as part of a specialized data engineering workflow.
-            </p>
-            <div class="chips">
-              <span>Python</span>
-              <span>Data Cleaning</span>
-              <span>Visualization</span>
-            </div>
+            <p>Cleaned transit data and created analytical visualizations for ridership trends.</p>
+            <div class="chips"><span>Python</span><span>Data Science</span></div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="about section reveal" id="about">
-      <div class="container about-grid">
-        <div class="about-left">
-          <div class="section-heading">
-            <p class="section-kicker">ABOUT ME</p>
-            <h2>Passionate about Software Engineering and AI.</h2>
-          </div>
-          <p>
-            I am a 21-year-old engineering student at the Faculty of Engineering Technology (Polytechnic). 
-            My journey is fueled by a deep interest in software architecture and the transformative power of AI.
-          </p>
-          <p>
-            I have hands-on experience in languages like C++, Java, and Python, and I am currently 
-            honing my skills in MLOps and LLM engineering through the AI.SPIRE program.
-          </p>
-        </div>
-
-        <div class="about-right reveal-card">
-          <div class="stats-card">
-            <div class="stat-box"><strong>B1</strong><span>English Level</span></div>
-            <div class="stat-box"><strong>AI</strong><span>Career Focus</span></div>
-            <div class="stat-box"><strong>5+</strong><span>Languages</span></div>
-            <div class="stat-box"><strong>2026</strong><span>Active Year</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section reveal" id="contact">
-      <div class="container">
-        <div class="contact-panel">
-          <div class="section-heading">
-            <p class="section-kicker">CONNECT</p>
-            <h2>Let’s build the future together.</h2>
-          </div>
-
-          <div class="contact-links">
-            <a class="contact-item theme-button reveal-card" href="https://github.com/OmarAlakhras" target="_blank">
-              <span class="contact-title">GitHub</span>
-              <span class="contact-value">github.com/OmarAlakhras</span>
-            </a>
-            <a class="contact-item theme-button reveal-card" href="mailto:omar.alakhras@email.com">
-              <span class="contact-title">Email</span>
-              <span class="contact-value">Contact via Email</span>
-            </a>
-          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer reveal">
+  <footer class="footer">
     <div class="container">
       <p>© 2026 Omar Al-akhras — Software & AI Portfolio</p>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
