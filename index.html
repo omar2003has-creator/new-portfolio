@@ -1,175 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omar Al-akhras | Applied AI & ML Systems Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="stylesheet" href="index.css" />
-
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0a0a0f; color: white; }
-        .orbitron { font-family: 'Orbitron', sans-serif; }
-        .hero-glow { background: radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 70%); }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omar Alakhras | AI/ML Engineer Portfolio</title>
+  <meta name="description" content="AI/ML Engineer | Computer Engineering | Building production-ready ML systems" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
 </head>
-<body class="bg-[#0a0a0f] selection:bg-cyan-500/30">
+<body class="theme-default">
+  <div class="loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-text">Omar Alakhras</div>
+    </div>
+  </div>
 
-    <nav class="sticky top-0 z-50 bg-[#0a0a0f]/80 backdrop-blur-md border-b border-white/5 py-4">
-        <div class="container mx-auto px-6 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-3 h-3 bg-cyan-500 rounded-full animate-pulse"></div>
-                <span class="orbitron text-xl font-bold tracking-tighter">Omar Al-akhras</span>
+  <div class="page-bg" aria-hidden="true">
+    <div class="grid"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+    <div class="wave wave-a"></div>
+    <div class="wave wave-b"></div>
+    <div class="wave wave-c"></div>
+    <div class="particles">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="top-links">
+        <a href="https://github.com/omar2003has-creator" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:omar2003has@gmail.com">omar2003has@gmail.com</a>
+      </div>
+      <div class="top-links">
+        <a href="https://www.linkedin.com/in/omar-alakhras-743411317/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span>Jordan</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">
+        <span class="brand-icon"></span>
+        <span>Omar Alakhras</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#future">Future</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a class="btn btn-small btn-primary theme-button" href="#projects">Explore Work</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero reveal" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="section-kicker">ML / AI ENGINEER</p>
+          <h1>
+            Building <span>production-ready ML systems</span><br />
+            from experiment to deployment.
+          </h1>
+          <p class="hero-text">
+            I am <strong>Omar Alakhras</strong>, a Computer Engineering graduate with a passion for building functional, 
+            data-driven systems. I specialize in the intersection of <strong>Backend Development</strong> and <strong>Data Engineering</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary theme-button" href="https://github.com/omar2003has-creator" target="_blank">View GitHub</a>
+            <a class="btn btn-secondary theme-button" href="#contact">Contact Me</a>
+            <a class="btn btn-ghost theme-button" href="#skills">My Skills</a>
+          </div>
+
+          <div class="hero-mini-cards">
+            <div class="mini-card reveal-card">
+              <span class="mini-label">Role</span>
+              <strong>ML / AI Engineer</strong>
             </div>
-            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
-                <a href="#home" class="hover:text-cyan-400 transition">Home</a>
-                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
-                <a href="#about" class="hover:text-cyan-400 transition">About</a>
-                <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+            <div class="mini-card reveal-card">
+              <span class="mini-label">Focus</span>
+              <strong>Data Engineering & Backend</strong>
             </div>
+            <div class="mini-card reveal-card">
+              <span class="mini-label">Education</span>
+              <strong>Computer Engineering</strong>
+            </div>
+          </div>
         </div>
-    </nav>
 
-    <main>
-        <section id="home" class="relative min-h-[90vh] flex items-center overflow-hidden hero-glow">
-            <div class="absolute top-20 left-1/4 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full"></div>
-            
-            <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
-                <div class="hero-copy">
-                    <p class="text-cyan-500 font-bold tracking-[0.2em] text-xs mb-4 uppercase">AI.SPIRE Program Participant</p>
-                    <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] mb-6">
-                        Building <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent italic">real-world</span> AI systems.
-                    </h1>
-                    <p class="text-gray-400 text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
-                        I am <strong>Omar Al-akhras</strong>, focusing on backend development, data engineering, and production-ready AI systems.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="https://github.com/omar2003has-creator" class="px-8 py-4 bg-cyan-500 text-black font-bold rounded-xl hover:bg-cyan-400 transition-all shadow-[0_0_20px_rgba(6,182,212,0.3)]">View GitHub</a>
-                        <a href="#contact" class="px-8 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-xl hover:bg-white/10 transition-all">Contact Me</a>
+        <div class="hero-visual reveal-card">
+          <div class="visual-card">
+            <div class="visual-frame">
+              <div class="orbital orbital-1"></div>
+              <div class="orbital orbital-2"></div>
+              <div class="portrait-shell">
+                <div class="portrait-ring">
+                  <div class="portrait-core portrait-photo">
+                    <div class="avatar-placeholder">
+                      <span>OA</span>
                     </div>
-                    
-                    <div class="mt-16 flex gap-6">
-                        <div class="bg-white/5 border border-white/10 p-4 rounded-2xl backdrop-blur-sm min-w-[140px]">
-                            <p class="text-[10px] text-gray-500 uppercase font-bold mb-1">Role</p>
-                            <p class="text-sm font-bold">ML / AI Engineer</p>
-                        </div>
-                        <div class="bg-white/5 border border-white/10 p-4 rounded-2xl backdrop-blur-sm min-w-[140px]">
-                            <p class="text-[10px] text-gray-500 uppercase font-bold mb-1">Focus</p>
-                            <p class="text-sm font-bold italic">Data & Models</p>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-
-                <div class="relative flex justify-center items-center">
-                    <div class="relative w-72 h-72 md:w-96 md:h-96 flex justify-center items-center">
-                        <div class="absolute inset-0 border border-white/5 rounded-full"></div>
-                        <div class="absolute inset-10 border border-white/10 rounded-full"></div>
-                        
-                        <div class="w-48 h-48 md:w-64 md:h-64 bg-[#111] border-2 border-cyan-500/50 rounded-full flex items-center justify-center shadow-[0_0_50px_rgba(6,182,212,0.2)] overflow-hidden">
-                           <span class="orbitron text-6xl md:text-8xl text-cyan-500 opacity-80">OA</span>
-                        </div>
-                        
-                        <div class="absolute top-0 right-0 bg-[#0a0a0f] border border-white/10 px-4 py-1 rounded-full text-[10px] font-bold">Data + Models</div>
-                        <div class="absolute top-1/2 -left-8 bg-[#0a0a0f] border border-white/10 px-4 py-1 rounded-full text-[10px] font-bold">ML Systems</div>
-                        <div class="absolute bottom-4 right-1/4 bg-[#0a0a0f] border border-white/10 px-4 py-1 rounded-full text-[10px] font-bold">Real-World Projects</div>
-                    </div>
-                </div>
+              </div>
+              <div class="badge badge-left">ML Systems</div>
+              <div class="badge badge-right">Data Pipelines</div>
+              <div class="badge badge-bottom">API Development</div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="projects" class="py-24 bg-[#0c0c14]">
-            <div class="container mx-auto px-6">
-                <div class="mb-16">
-                    <h2 class="orbitron text-3xl font-bold mb-4 italic text-cyan-400 uppercase tracking-tighter">Featured Work</h2>
-                    <p class="text-gray-500">Selected projects from my AI.SPIRE journey.</p>
-                </div>
+    <section class="about section reveal" id="about-detail">
+      <div class="container about-grid">
+        <div class="about-left">
+          <div class="section-heading">
+            <p class="section-kicker">ABOUT ME</p>
+            <h2>Computer Engineering graduate focused on building the "engine room" of applications.</h2>
+          </div>
+          <p>
+            I am a Computer Engineering graduate from FET with a strong foundation in building functional, data-driven systems. 
+            Currently, I am expanding my technical depth through the <strong>AI.SPIRE program</strong>, focusing on the practical 
+            application of Machine Learning and Intelligent Systems.
+          </p>
+          <p>
+            My core interest lies at the intersection of Backend Development and Data Engineering. I enjoy designing robust APIs, 
+            optimizing databases, and ensuring ML models move successfully from experiments to production-ready environments.
+          </p>
+          <p>
+            I am driven by scalable architecture and the continuous process of learning new technologies. If you're looking for 
+            someone who prioritizes clean, maintainable, and clear code — you've come to the right place.
+          </p>
+        </div>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <article class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:border-cyan-500/50 transition-all group">
-                        <div class="flex justify-between items-start mb-6">
-                            <span class="text-[10px] font-bold text-cyan-500 bg-cyan-500/10 px-3 py-1 rounded-full">SQL & Data</span>
-                            <a href="https://github.com/omar2003has-creator/SQL-Murder-Mystery" class="text-gray-500 hover:text-white transition italic text-xs">View Repo</a>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 group-hover:text-cyan-400 transition">SQL Murder Mystery</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Investigative data analysis using complex SQL queries to solve a simulated crime case.</p>
-                        <div class="flex gap-2">
-                            <span class="text-[10px] text-gray-500 border border-white/10 px-2 py-1 rounded-md">SQLite</span>
-                            <span class="text-[10px] text-gray-500 border border-white/10 px-2 py-1 rounded-md">Data Analysis</span>
-                        </div>
-                    </article>
-
-                    <article class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:border-cyan-500/50 transition-all group">
-                        <div class="flex justify-between items-start mb-6">
-                            <span class="text-[10px] font-bold text-blue-500 bg-blue-500/10 px-3 py-1 rounded-full">Engineering</span>
-                            <a href="https://github.com/LevelUp-Applied-AI/m3-i3-etl-pipeline-omar2003has-creator" class="text-gray-500 hover:text-white transition italic text-xs">View Repo</a>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 group-hover:text-blue-400 transition">ETL Data Pipeline</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Building a robust pipeline to process transit ridership data from raw source to analytics.</p>
-                        <div class="flex gap-2">
-                            <span class="text-[10px] text-gray-500 border border-white/10 px-2 py-1 rounded-md">Python</span>
-                            <span class="text-[10px] text-gray-500 border border-white/10 px-2 py-1 rounded-md">Pandas</span>
-                        </div>
-                    </article>
-
-                    <article class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:border-cyan-500/50 transition-all group">
-                        <div class="flex justify-between items-start mb-6">
-                            <span class="text-[10px] font-bold text-purple-500 bg-purple-500/10 px-3 py-1 rounded-full">Visualization</span>
-                            <a href="https://github.com/omar2003has-creator/m4-s2" class="text-gray-500 hover:text-white transition italic text-xs">View Repo</a>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 group-hover:text-purple-400 transition">KPI Dashboard</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Shared chart gallery and descriptive analytics dashboard for market performance.</p>
-                        <div class="flex gap-2">
-                            <span class="text-[10px] text-gray-500 border border-white/10 px-2 py-1 rounded-md">Plotly</span>
-                            <span class="text-[10px] text-gray-500 border border-white/10 px-2 py-1 rounded-md">Analytics</span>
-                        </div>
-                    </article>
-                </div>
+        <div class="about-right reveal-card">
+          <div class="stats-card">
+            <div class="stat-box">
+              <strong>10+</strong>
+              <span>Projects Completed</span>
             </div>
-        </section>
-
-        <section id="about" class="py-24 border-t border-white/5">
-            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="orbitron text-3xl font-bold mb-6 italic text-white uppercase">About Me</h2>
-                    <p class="text-gray-400 mb-6 leading-relaxed">
-                        I am a Computer Engineering graduate from Al-Balqa’ Applied University (FET) in Jordan.
-                    </p>
-                    <p class="text-gray-400 leading-relaxed">
-                        Currently deep-diving into AI systems through the AI.SPIRE program, building practical expertise in backend logic and data pipelines.
-                    </p>
-                </div>
-                <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
-                    <div class="grid grid-cols-2 gap-6 text-center">
-                        <div><p class="text-2xl font-bold text-cyan-400">B1</p><p class="text-[10px] text-gray-500 uppercase">English</p></div>
-                        <div><p class="text-2xl font-bold text-cyan-400">AI</p><p class="text-[10px] text-gray-500 uppercase">Focus</p></div>
-                    </div>
-                </div>
+            <div class="stat-box">
+              <strong>AI.SPIRE</strong>
+              <span>Honors Track</span>
             </div>
-        </section>
-
-        <section id="contact" class="py-24 bg-gradient-to-b from-transparent to-cyan-950/20">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="orbitron text-4xl font-extrabold mb-8 italic uppercase tracking-tighter">Get in Touch</h2>
-                <div class="flex flex-wrap justify-center gap-8 text-gray-400 font-medium">
-                    <a href="mailto:omar2003has@gmail.com" class="hover:text-cyan-400 transition">omar2003has@gmail.com</a>
-                    <span class="hidden md:block opacity-20">|</span>
-                    <a href="tel:0781107240" class="hover:text-cyan-400 transition">0781107240</a>
-                    <span class="hidden md:block opacity-20">|</span>
-                    <span>Jordan</span>
-                </div>
+            <div class="stat-box">
+              <strong>ML/Data</strong>
+              <span>Production Focus</span>
             </div>
-        </section>
-    </main>
+            <div class="stat-box">
+              <strong>2025-2026</strong>
+              <span>Portfolio Edition</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer class="py-10 border-t border-white/5 text-center text-gray-600 text-[10px] uppercase font-bold tracking-widest">
-        © 2026 Omar Al-akhras — Applied AI & ML Systems Portfolio
-    </footer>
+    <section class="skills section reveal" id="skills">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker">TECHNICAL SKILLS</p>
+          <h2>My toolkit & expertise</h2>
+          <p>Languages, frameworks, and tools I work with daily.</p>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="skills-grid">
+          <div class="skill-category reveal-card">
+            <h3>Languages</h3>
+            <div class="skill-items">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>JavaScript</span>
+              <span>HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-category reveal-card">
+            <h3>ML & Data</h3>
+            <div class="skill-items">
+              <span>Scikit-learn</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+              <span>Time Series Analysis</span>
+              <span>Classification</span>
+            </div>
+          </div>
+          <div class="skill-category reveal-card">
+            <h3>Backend & DB</h3>
+            <div class="skill-items">
+              <span>PostgreSQL</span>
+              <span>ETL Pipelines</span>
+              <span>REST APIs</span>
+              <span>Query Optimization</span>
+            </div>
+          </div>
+          <div class="skill-category reveal-card">
+            <h3>Tools & Others</h3>
+            <div class="skill-items">
+              <span>Git/GitHub</span>
+              <span>Jupyter</span>
+              <span>VS Code</span>
+              <span>Docker (Learning)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section reveal" id="projects">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker">PROJECTS</p>
+          <h2>Featured work</h2>
+          <p>Real projects across ML, data engineering, and analytics.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card tilt-card reveal-card">
+            <div class="project-top">
+              <span class="project-tag">Classification</span>
+              <a href="https://github.com/LevelUp-Applied-Al/m5-d5a-classification-basics-omar2003has-creator" target="_blank">View Repo →</a>
+            </div>
+            <h3>Classification Basics</h3>
+            <p>Machine learning classification fundamentals with Python, building and evaluating models for real datasets.</p>
+            <div class="chips"><span>Python</span><span>Scikit-learn</span><span>Classification</span></div>
+          </article>
+
+          <article class="project-card tilt-card reveal-card">
+            <div class="project-top">
+              <span class="project-tag">Visualization</span>
+              <a href="https://github.com/omar2003has-creator/m4-s2" target="_blank">View Repo →</a>
+            </div>
+            <h3>Shared Chart Gallery</h3>
+            <p>Interactive data visualization gallery demonstrating various chart types and analytical patterns.</p>
+            <div class="chips"><span>Python</span><span>Data Viz</span><span>Analytics</span></div>
+          </article>
+
+          <article class="project-card tilt-card reveal-card">
+            <div class="project-top">
+              <span class="project-tag">Dashboard</span>
+              <a href="https://github.com/LevelUp-Applied-Al/m4-i4-kpi-dashboard-omar2003has-creator" target="_blank">View Repo →</a>
+            </div>
+            <h3>KPI Dashboard</h3>
+            <p>Interactive KPI dashboard for business metrics tracking and performance monitoring.</p>
+            <div class="chips"><span>Python</span><span>Dashboards</span><span>KPIs</span></div>
+          </article>
+
+          <article class="project-card tilt-card reveal-card">
+            <div class="project-top">
+              <span class="project-tag">Analytics</span>
+              <a href="https://github.com/LevelUp-Applied-Al/m4-i4-descriptive-analytics-omar2003has-creator-1" target="_blank">View Repo →</a>
+            </div>
+            <h3>Descriptive Analytics</h3>
+            <p>Comprehensive descriptive analytics project exploring data patterns and generating actionable insights.</p>
+            <div class="chips"><span>Python</span><span>Pandas</span><span>Analytics</span></div>
+          </article>
+
+          <article class="project-card tilt-card reveal-card">
+            <div class="project-top">
+              <span class="project-tag">SQL</span>
+              <a href="https://github.com/omar2003has-creator/SQL-Murder-Mystery" target="_blank">View Repo →</a>
+            </div>
+            <h3>SQL Murder Mystery</h3>
+            <p>Solved a murder mystery using SQL queries — a fun and challenging investigation project.</p>
+            <div class="chips"><span>SQL</span><span>PostgreSQL</span><span>Investigations</span></div>
+          </article>
+
+          <article class="project-card tilt-card reveal-card">
+            <div class="project-top">
+              <span class="project-tag">Time Series</span>
+              <a href="https://github.com/LevelUp-Applied-Al/m3-s2-time-series-analytics-omar2003has-creator" target="_blank">View Repo →</a>
+            </div>
+            <h3>Time Series Analytics</h3>
+            <p>Time series analysis for trend detection and forecasting using statistical methods.</p>
+            <div class="chips"><span>Python</span><span>Time Series</span><span>Forecasting</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="volunteer section reveal" id="volunteer">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker">VOLUNTEER & LEADERSHIP</p>
+          <h2>Beyond the code</h2>
+          <p>Community involvement and contributions.</p>
+        </div>
+
+        <div class="volunteer-grid">
+          <div class="volunteer-card reveal-card">
+            <div class="volunteer-icon"></div>
+            <h3>AI.SPIRE Program</h3>
+            <p>Active participant in the AI.SPIRE Honors Track, collaborating on cutting-edge AI/ML projects and research.</p>
+          </div>
+          <div class="volunteer-card reveal-card">
+            <div class="volunteer-icon"></div>
+            <h3>Technical Community</h3>
+            <p>Contributing to open-source projects and helping fellow developers with code reviews and technical guidance.</p>
+          </div>
+          <div class="volunteer-card reveal-card">
+            <div class="volunteer-icon"></div>
+            <h3>Student Mentorship</h3>
+            <p>Mentoring junior students in computer engineering fundamentals and programming best practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="future section reveal" id="future">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker">WHAT'S NEXT</p>
+          <h2>Future modules & learning path</h2>
+          <p>Continuous growth through the AI.SPIRE program.</p>
+        </div>
+
+        <div class="future-grid">
+          <div class="future-card reveal-card">
+            <div class="future-tag upcoming">Upcoming</div>
+            <h3>Retrieval & Knowledge Graphs</h3>
+            <p>Advanced RAG systems, vector databases, and knowledge graph implementation.</p>
+          </div>
+          <div class="future-card reveal-card">
+            <div class="future-tag upcoming">Upcoming</div>
+            <h3>Deployment & API Development</h3>
+            <p>Model serving, REST APIs, containerization, and production deployment strategies.</p>
+          </div>
+          <div class="future-card reveal-card">
+            <div class="future-tag soon">Coming Soon</div>
+            <h3>Capstone Project</h3>
+            <p>End-to-end ML solution from ideation to deployment — a complete portfolio piece.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section reveal" id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <div class="section-heading">
+            <p class="section-kicker">CONTACT</p>
+            <h2>Let's build something great together.</h2>
+            <p>Reach out through any platform below.</p>
+          </div>
+
+          <div class="contact-links">
+            <a class="contact-item reveal-card" href="https://github.com/omar2003has-creator" target="_blank">
+              <span class="contact-title">GitHub</span>
+              <span class="contact-value">github.com/omar2003has-creator</span>
+            </a>
+
+            <a class="contact-item reveal-card" href="https://www.linkedin.com/in/omar-alakhras-743411317/" target="_blank">
+              <span class="contact-title">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/omar-alakhras</span>
+            </a>
+
+            <a class="contact-item reveal-card" href="mailto:omar2003has@gmail.com">
+              <span class="contact-title">Email</span>
+              <span class="contact-value">omar2003has@gmail.com</span>
+            </a>
+
+            <a class="contact-item reveal-card" href="tel:0781107240">
+              <span class="contact-title">Phone</span>
+              <span class="contact-value">+962 78 110 7240</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer reveal">
+    <div class="container">
+      <p>© 2026 Omar Alakhras — AI/ML Engineer Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
