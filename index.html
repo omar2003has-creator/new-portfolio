@@ -1,318 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Omar Alakhras | AI/ML Engineer Portfolio</title>
-  <meta name="description" content="AI/ML Engineer | Computer Engineering | Building production-ready ML systems" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omar Alakhras | AI/ML Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
 </head>
-<body class="theme-default">
-  <div class="loader" id="pageLoader" aria-hidden="true">
-    <div class="loader-inner">
-      <div class="loader-ring"></div>
-      <div class="loader-text">Omar Alakhras</div>
-    </div>
-  </div>
+<body>
 
-  <div class="page-bg" aria-hidden="true">
-    <div class="grid"></div>
-    <div class="glow glow-1"></div>
-    <div class="glow glow-2"></div>
-    <div class="glow glow-3"></div>
-    <div class="wave wave-a"></div>
-    <div class="wave wave-b"></div>
-    <div class="wave wave-c"></div>
-    <div class="particles">
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-    </div>
-  </div>
-
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <div class="top-links">
-        <a href="https://github.com/omar2003has-creator" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:omar2003has@gmail.com">omar2003has@gmail.com</a>
-      </div>
-      <div class="top-links">
-        <a href="https://www.linkedin.com/in/omar-alakhras-743411317/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <span>Jordan</span>
-      </div>
-    </div>
-  </header>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
 
   <nav class="navbar">
-    <div class="container nav-inner">
-      <a class="brand" href="#home">
-        <span class="brand-icon"></span>
-        <span>Omar Alakhras</span>
-      </a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
-
-      <div class="nav-links" id="navLinks">
+    <div class="nav-container">
+      <a href="#" class="logo">Omar<span>Alakhras</span></a>
+      <div class="nav-links">
         <a href="#home">Home</a>
+        <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#volunteer">Volunteer</a>
-        <a href="#future">Future</a>
         <a href="#contact">Contact</a>
       </div>
-
-      <a class="btn btn-small btn-primary theme-button" href="#projects">Explore Work</a>
+      <button class="menu-btn"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
 
   <main>
-    <section class="hero reveal" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="section-kicker">ML / AI ENGINEER</p>
-          <h1>
-            Building <span>production-ready ML systems</span><br />
-            from experiment to deployment.
-          </h1>
-          <p class="hero-text">
-            I am <strong>Omar Alakhras</strong>, a Computer Engineering graduate with a passion for building functional, 
-            data-driven systems. I specialize in the intersection of <strong>Backend Development</strong> and <strong>Data Engineering</strong>.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary theme-button" href="https://github.com/omar2003has-creator" target="_blank">View GitHub</a>
-            <a class="btn btn-secondary theme-button" href="#contact">Contact Me</a>
-            <a class="btn btn-ghost theme-button" href="#skills">My Skills</a>
-          </div>
-
-          <div class="hero-mini-cards">
-            <div class="mini-card reveal-card">
-              <span class="mini-label">Role</span>
-              <strong>ML / AI Engineer</strong>
-            </div>
-            <div class="mini-card reveal-card">
-              <span class="mini-label">Focus</span>
-              <strong>Data Engineering & Backend</strong>
-            </div>
-            <div class="mini-card reveal-card">
-              <span class="mini-label">Education</span>
-              <strong>Computer Engineering</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal-card">
-          <div class="visual-card">
-            <div class="visual-frame">
-              <div class="orbital orbital-1"></div>
-              <div class="orbital orbital-2"></div>
-              <div class="portrait-shell">
-                <div class="portrait-ring">
-                  <div class="portrait-core portrait-photo">
-                    <div class="avatar-placeholder">
-                      <span>OA</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="badge badge-left">ML Systems</div>
-              <div class="badge badge-right">Data Pipelines</div>
-              <div class="badge badge-bottom">API Development</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about section reveal" id="about-detail">
-      <div class="container about-grid">
-        <div class="about-left">
-          <div class="section-heading">
-            <p class="section-kicker">ABOUT ME</p>
-            <h2>Computer Engineering graduate focused on building the "engine room" of applications.</h2>
-          </div>
-          <p>
-            I am a Computer Engineering graduate from FET with a strong foundation in building functional, data-driven systems. 
-            Currently, I am expanding my technical depth through the <strong>AI.SPIRE program</strong>, focusing on the practical 
-            application of Machine Learning and Intelligent Systems.
-          </p>
-          <p>
-            My core interest lies at the intersection of Backend Development and Data Engineering. I enjoy designing robust APIs, 
-            optimizing databases, and ensuring ML models move successfully from experiments to production-ready environments.
-          </p>
-          <p>
-            I am driven by scalable architecture and the continuous process of learning new technologies. If you're looking for 
-            someone who prioritizes clean, maintainable, and clear code — you've come to the right place.
-          </p>
-        </div>
-
-        <div class="about-right reveal-card">
-          <div class="stats-card">
-            <div class="stat-box">
-              <strong>10+</strong>
-              <span>Projects Completed</span>
-            </div>
-            <div class="stat-box">
-              <strong>AI.SPIRE</strong>
-              <span>Honors Track</span>
-            </div>
-            <div class="stat-box">
-              <strong>ML/Data</strong>
-              <span>Production Focus</span>
-            </div>
-            <div class="stat-box">
-              <strong>2025-2026</strong>
-              <span>Portfolio Edition</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills section reveal" id="skills">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
       <div class="container">
-        <div class="section-heading centered">
-          <p class="section-kicker">TECHNICAL SKILLS</p>
-          <h2>My toolkit & expertise</h2>
-          <p>Languages, frameworks, and tools I work with daily.</p>
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="badge-glow">
+              <span class="glow-text"><i class="fas fa-microchip"></i> ML / AI Engineer</span>
+            </div>
+            <h1>Omar <span class="gradient-text">Alakhras</span></h1>
+            <h2>Computer Engineering | AI & Data Engineering</h2>
+            <p>Building production-ready ML systems from experiment to deployment. Computer Engineering graduate focused on backend development and data engineering.</p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary"><i class="fas fa-arrow-right"></i> View Work</a>
+              <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/omar2003has-creator" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/omar-alakhras-743411317/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:omar2003has@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="tel:0781107240"><i class="fas fa-phone"></i></a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="code-card">
+              <div class="code-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="code-content">
+                <pre><code><span class="keyword">class</span> <span class="class-name">OmarAlakhras</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.role = <span class="string">"ML/AI Engineer"</span>
+        self.education = <span class="string">"Computer Engineering"</span>
+        self.focus = [<span class="string">"Backend"</span>, <span class="string">"Data Engineering"</span>]
+    
+    <span class="keyword">def</span> <span class="function">build</span>(self):
+        <span class="keyword">return</span> <span class="string">"production-ready systems"</span></code></pre>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-user-astronaut"></i> About Me</span>
+          <h2>Who <span class="gradient-text">am I?</span></h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>I am a <strong>Computer Engineering graduate from FET</strong> with a strong foundation in building functional, data-driven systems. Currently expanding my technical depth through the <strong>AI.SPIRE program</strong>, focusing on practical application of Machine Learning and Intelligent Systems.</p>
+            <p>My core interest lies at the intersection of <strong>Backend Development</strong> and <strong>Data Engineering</strong>. I enjoy designing robust APIs, optimizing databases, and ensuring ML models move successfully from experiments to production-ready environments.</p>
+            <p>I am driven by scalable architecture and the continuous process of learning new technologies. If you're looking for someone who prioritizes <strong>clean, maintainable, and clear code</strong> — you've come to the right place.</p>
+          </div>
+          <div class="info-cards">
+            <div class="info-card">
+              <i class="fas fa-graduation-cap"></i>
+              <h4>Education</h4>
+              <p>Computer Engineering<br>Faculty of Engineering Technology</p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-code-branch"></i>
+              <h4>Program</h4>
+              <p>AI.SPIRE<br>Honors Track</p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Location</h4>
+              <p>Jordan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-cogs"></i> Tech Stack</span>
+          <h2>Skills & <span class="gradient-text">Expertise</span></h2>
+        </div>
         <div class="skills-grid">
-          <div class="skill-category reveal-card">
+          <div class="skill-category">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
             <h3>Languages</h3>
-            <div class="skill-items">
+            <div class="skill-tags">
               <span>Python</span>
               <span>SQL</span>
               <span>JavaScript</span>
               <span>HTML/CSS</span>
             </div>
           </div>
-          <div class="skill-category reveal-card">
+          <div class="skill-category">
+            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
             <h3>ML & Data</h3>
-            <div class="skill-items">
+            <div class="skill-tags">
               <span>Scikit-learn</span>
               <span>Pandas</span>
               <span>NumPy</span>
-              <span>Time Series Analysis</span>
+              <span>Time Series</span>
               <span>Classification</span>
             </div>
           </div>
-          <div class="skill-category reveal-card">
+          <div class="skill-category">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
             <h3>Backend & DB</h3>
-            <div class="skill-items">
+            <div class="skill-tags">
               <span>PostgreSQL</span>
               <span>ETL Pipelines</span>
               <span>REST APIs</span>
               <span>Query Optimization</span>
             </div>
           </div>
-          <div class="skill-category reveal-card">
-            <h3>Tools & Others</h3>
-            <div class="skill-items">
+          <div class="skill-category">
+            <div class="skill-icon"><i class="fas fa-tools"></i></div>
+            <h3>Tools</h3>
+            <div class="skill-tags">
               <span>Git/GitHub</span>
               <span>Jupyter</span>
               <span>VS Code</span>
-              <span>Docker (Learning)</span>
+              <span>Docker*</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="projects section reveal" id="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
       <div class="container">
-        <div class="section-heading centered">
-          <p class="section-kicker">PROJECTS</p>
-          <h2>Featured work</h2>
-          <p>Real projects across ML, data engineering, and analytics.</p>
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-project-diagram"></i> Portfolio</span>
+          <h2>Featured <span class="gradient-text">Projects</span></h2>
         </div>
-
-        <div class="project-grid">
-          <article class="project-card tilt-card reveal-card">
-            <div class="project-top">
-              <span class="project-tag">Classification</span>
-              <a href="https://github.com/LevelUp-Applied-Al/m5-d5a-classification-basics-omar2003has-creator" target="_blank">View Repo →</a>
-            </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <div class="project-tag">Classification</div>
             <h3>Classification Basics</h3>
             <p>Machine learning classification fundamentals with Python, building and evaluating models for real datasets.</p>
-            <div class="chips"><span>Python</span><span>Scikit-learn</span><span>Classification</span></div>
-          </article>
-
-          <article class="project-card tilt-card reveal-card">
-            <div class="project-top">
-              <span class="project-tag">Visualization</span>
-              <a href="https://github.com/omar2003has-creator/m4-s2" target="_blank">View Repo →</a>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Scikit-learn</span>
             </div>
-            <h3>Shared Chart Gallery</h3>
-            <p>Interactive data visualization gallery demonstrating various chart types and analytical patterns.</p>
-            <div class="chips"><span>Python</span><span>Data Viz</span><span>Analytics</span></div>
-          </article>
-
-          <article class="project-card tilt-card reveal-card">
-            <div class="project-top">
-              <span class="project-tag">Dashboard</span>
-              <a href="https://github.com/LevelUp-Applied-Al/m4-i4-kpi-dashboard-omar2003has-creator" target="_blank">View Repo →</a>
+            <a href="https://github.com/LevelUp-Applied-Al/m5-d5a-classification-basics-omar2003has-creator" target="_blank" class="project-link">View Repo <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-chart-simple"></i></div>
+            <div class="project-tag">Analytics</div>
+            <h3>Time Series Analytics</h3>
+            <p>Time series analysis for trend detection and forecasting using statistical methods and Python.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Forecasting</span>
             </div>
+            <a href="https://github.com/LevelUp-Applied-Al/m3-s2-time-series-analytics-omar2003has-creator" target="_blank" class="project-link">View Repo <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-chart-pie"></i></div>
+            <div class="project-tag">Dashboard</div>
             <h3>KPI Dashboard</h3>
             <p>Interactive KPI dashboard for business metrics tracking and performance monitoring.</p>
-            <div class="chips"><span>Python</span><span>Dashboards</span><span>KPIs</span></div>
-          </article>
-
-          <article class="project-card tilt-card reveal-card">
-            <div class="project-top">
-              <span class="project-tag">Analytics</span>
-              <a href="https://github.com/LevelUp-Applied-Al/m4-i4-descriptive-analytics-omar2003has-creator-1" target="_blank">View Repo →</a>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Dashboards</span>
+              <span>KPIs</span>
             </div>
-            <h3>Descriptive Analytics</h3>
-            <p>Comprehensive descriptive analytics project exploring data patterns and generating actionable insights.</p>
-            <div class="chips"><span>Python</span><span>Pandas</span><span>Analytics</span></div>
-          </article>
-
-          <article class="project-card tilt-card reveal-card">
-            <div class="project-top">
-              <span class="project-tag">SQL</span>
-              <a href="https://github.com/omar2003has-creator/SQL-Murder-Mystery" target="_blank">View Repo →</a>
-            </div>
+            <a href="https://github.com/LevelUp-Applied-Al/m4-i4-kpi-dashboard-omar2003has-creator" target="_blank" class="project-link">View Repo <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-database"></i></div>
+            <div class="project-tag">SQL</div>
             <h3>SQL Murder Mystery</h3>
-            <p>Solved a murder mystery using SQL queries — a fun and challenging investigation project.</p>
-            <div class="chips"><span>SQL</span><span>PostgreSQL</span><span>Investigations</span></div>
-          </article>
-
-          <article class="project-card tilt-card reveal-card">
-            <div class="project-top">
-              <span class="project-tag">Time Series</span>
-              <a href="https://github.com/LevelUp-Applied-Al/m3-s2-time-series-analytics-omar2003has-creator" target="_blank">View Repo →</a>
+            <p>Solved a murder mystery using SQL queries — a challenging investigation project.</p>
+            <div class="project-tech">
+              <span>SQL</span>
+              <span>PostgreSQL</span>
             </div>
-            <h3>Time Series Analytics</h3>
-            <p>Time series analysis for trend detection and forecasting using statistical methods.</p>
-            <div class="chips"><span>Python</span><span>Time Series</span><span>Forecasting</span></div>
-          </article>
+            <a href="https://github.com/omar2003has-creator/SQL-Murder-Mystery" target="_blank" class="project-link">View Repo <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="volunteer section reveal" id="volunteer">
+    <!-- Volunteer Section -->
+    <section class="volunteer">
       <div class="container">
-        <div class="section-heading centered">
-          <p class="section-kicker">VOLUNTEER & LEADERSHIP</p>
-          <h2>Beyond the code</h2>
-          <p>Community involvement and contributions.</p>
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-hand-heart"></i> Beyond Code</span>
+          <h2>Volunteer & <span class="gradient-text">Leadership</span></h2>
         </div>
-
         <div class="volunteer-grid">
-          <div class="volunteer-card reveal-card">
-            <div class="volunteer-icon"></div>
+          <div class="volunteer-card">
+            <i class="fas fa-graduation-cap"></i>
             <h3>AI.SPIRE Program</h3>
-            <p>Active participant in the AI.SPIRE Honors Track, collaborating on cutting-edge AI/ML projects and research.</p>
+            <p>Active participant in the AI.SPIRE Honors Track, collaborating on cutting-edge AI/ML projects.</p>
           </div>
-          <div class="volunteer-card reveal-card">
-            <div class="volunteer-icon"></div>
+          <div class="volunteer-card">
+            <i class="fas fa-users"></i>
             <h3>Technical Community</h3>
-            <p>Contributing to open-source projects and helping fellow developers with code reviews and technical guidance.</p>
+            <p>Contributing to open-source projects and helping fellow developers with code reviews.</p>
           </div>
-          <div class="volunteer-card reveal-card">
-            <div class="volunteer-icon"></div>
+          <div class="volunteer-card">
+            <i class="fas fa-chalkboard-user"></i>
             <h3>Student Mentorship</h3>
             <p>Mentoring junior students in computer engineering fundamentals and programming best practices.</p>
           </div>
@@ -320,27 +247,29 @@
       </div>
     </section>
 
-    <section class="future section reveal" id="future">
+    <!-- Future Modules -->
+    <section class="future">
       <div class="container">
-        <div class="section-heading centered">
-          <p class="section-kicker">WHAT'S NEXT</p>
-          <h2>Future modules & learning path</h2>
-          <p>Continuous growth through the AI.SPIRE program.</p>
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-rocket"></i> What's Next</span>
+          <h2>Future <span class="gradient-text">Modules</span></h2>
         </div>
-
         <div class="future-grid">
-          <div class="future-card reveal-card">
-            <div class="future-tag upcoming">Upcoming</div>
+          <div class="future-card">
+            <i class="fas fa-project-diagram"></i>
+            <div class="future-badge">Upcoming</div>
             <h3>Retrieval & Knowledge Graphs</h3>
             <p>Advanced RAG systems, vector databases, and knowledge graph implementation.</p>
           </div>
-          <div class="future-card reveal-card">
-            <div class="future-tag upcoming">Upcoming</div>
+          <div class="future-card">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <div class="future-badge">Upcoming</div>
             <h3>Deployment & API Development</h3>
             <p>Model serving, REST APIs, containerization, and production deployment strategies.</p>
           </div>
-          <div class="future-card reveal-card">
-            <div class="future-tag soon">Coming Soon</div>
+          <div class="future-card">
+            <i class="fas fa-medal"></i>
+            <div class="future-badge">Coming Soon</div>
             <h3>Capstone Project</h3>
             <p>End-to-end ML solution from ideation to deployment — a complete portfolio piece.</p>
           </div>
@@ -348,42 +277,40 @@
       </div>
     </section>
 
-    <section class="contact section reveal" id="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
       <div class="container">
-        <div class="contact-panel">
-          <div class="section-heading">
-            <p class="section-kicker">CONTACT</p>
-            <h2>Let's build something great together.</h2>
-            <p>Reach out through any platform below.</p>
-          </div>
-
-          <div class="contact-links">
-            <a class="contact-item reveal-card" href="https://github.com/omar2003has-creator" target="_blank">
-              <span class="contact-title">GitHub</span>
-              <span class="contact-value">github.com/omar2003has-creator</span>
-            </a>
-
-            <a class="contact-item reveal-card" href="https://www.linkedin.com/in/omar-alakhras-743411317/" target="_blank">
-              <span class="contact-title">LinkedIn</span>
-              <span class="contact-value">linkedin.com/in/omar-alakhras</span>
-            </a>
-
-            <a class="contact-item reveal-card" href="mailto:omar2003has@gmail.com">
-              <span class="contact-title">Email</span>
-              <span class="contact-value">omar2003has@gmail.com</span>
-            </a>
-
-            <a class="contact-item reveal-card" href="tel:0781107240">
-              <span class="contact-title">Phone</span>
-              <span class="contact-value">+962 78 110 7240</span>
-            </a>
-          </div>
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-paper-plane"></i> Get In Touch</span>
+          <h2>Let's <span class="gradient-text">Connect</span></h2>
+        </div>
+        <div class="contact-grid">
+          <a href="https://github.com/omar2003has-creator" target="_blank" class="contact-card">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <p>github.com/omar2003has-creator</p>
+          </a>
+          <a href="https://www.linkedin.com/in/omar-alakhras-743411317/" target="_blank" class="contact-card">
+            <i class="fab fa-linkedin-in"></i>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/omar-alakhras</p>
+          </a>
+          <a href="mailto:omar2003has@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>omar2003has@gmail.com</p>
+          </a>
+          <a href="tel:0781107240" class="contact-card">
+            <i class="fas fa-phone"></i>
+            <h3>Phone</h3>
+            <p>+962 78 110 7240</p>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer reveal">
+  <footer>
     <div class="container">
       <p>© 2026 Omar Alakhras — AI/ML Engineer Portfolio</p>
     </div>
