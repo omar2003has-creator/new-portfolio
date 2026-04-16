@@ -1,70 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Omar Al-akhras | Applied AI & ML Systems Portfolio</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="index.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omar Al-akhras | Applied AI & ML Systems Portfolio</title>
+  <meta name="description" content="Applied AI & ML Systems Portfolio - AI.SPIRE Program" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="index.css" />
 
-  <style>
-    body { background-color: #0a0a0f; color: #ffffff; font-family: 'Inter', sans-serif; }
-    .hero { background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%); padding: 100px 0; }
-    .btn-primary { background: #00d4ff; color: #000; padding: 12px 24px; border-radius: 8px; font-weight: 700; text-decoration: none; }
-    .project-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 20px; border-radius: 12px; }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* إضافة لمسة برمجية سريعة لضمان ظهور خلفية داكنة فوراً */
+    body {
+      background-color: #0a0a0f;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+      padding: 100px 0;
+    }
+    .btn-primary {
+      background: #00d4ff;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body class="theme-1">
-  <header class="site-header border-b border-white/10 py-4 sticky top-0 bg-black/80 backdrop-blur-md z-50">
-    <div class="container mx-auto flex justify-between items-center px-6">
-      <div class="brand flex items-center gap-2">
-        <span class="brand-mark w-4 h-4 bg-cyan-500 rounded-full"></span>
-        <span class="font-bold text-xl tracking-tighter" style="font-family: 'Orbitron';">Omar Al-akhras</span>
-      </div>
-      <nav class="nav-links hidden md:flex gap-6 text-sm font-medium opacity-80">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <header class="site-header border-b border-white/10 py-4 sticky top-0 bg-black/80 backdrop-blur-md z-50">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <div class="brand flex items-center gap-2">
+        <span class="brand-mark w-4 h-4 bg-cyan-500 rounded-full"></span>
+        <span class="font-bold text-xl tracking-tighter" style="font-family: 'Orbitron';">Omar Al-akhras</span>
+      </div>
 
-  <main>
-    <section id="home" class="hero relative overflow-hidden">
-      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        <div class="hero-copy">
-          <p class="eyebrow text-cyan-500 font-bold tracking-widest text-sm mb-2">AI.SPIRE PROGRAM</p>
-          <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">Applied AI & <br><span class="text-cyan-400">ML Systems</span></h1>
-          <p class="text-gray-400 text-lg mb-8">Focusing on backend development, data engineering, and production-ready AI systems.</p>
-          <div class="hero-actions flex gap-4">
-            <a class="btn-primary" href="#contact">Contact Me</a>
-          </div>
-        </div>
-      </div>
-    </section>
+      <nav class="nav-links hidden md:flex gap-6 text-sm font-medium opacity-80">
+        <a href="#about" class="hover:text-cyan-400">About</a>
+        <a href="#foundations" class="hover:text-cyan-400">Foundations</a>
+        <a href="#analytics" class="hover:text-cyan-400">Analytics</a>
+        <a href="#pipelines" class="hover:text-cyan-400">Pipelines & ML</a>
+        <a href="#dashboards" class="hover:text-cyan-400">Dashboards</a>
+        <a href="#contact" class="hover:text-cyan-400">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <section id="projects" class="py-20">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-10" style="font-family: 'Orbitron';">Featured Work</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="project-card"><h3>SQL Murder Mystery</h3><p class="text-sm text-gray-400">Advanced SQL investigation.</p></div>
-          <div class="project-card"><h3>ETL Data Pipeline</h3><p class="text-sm text-gray-400">Public transit data movement.</p></div>
-          <div class="project-card"><h3>KPI Dashboard</h3><p class="text-sm text-gray-400">Business performance visualization.</p></div>
-          <div class="project-card"><h3>ML Classification</h3><p class="text-sm text-gray-400">Classification basics & evaluation.</p></div>
-          <div class="project-card"><h3>Regression Eval</h3><p class="text-sm text-gray-400">Predictive model assessment.</p></div>
-          <div class="project-card"><h3>Shared Chart Gallery</h3><p class="text-sm text-gray-400">AI.SPIRE Honors Track.</p></div>
-        </div>
-      </div>
-    </section>
-  </main>
+  <main>
+    <section class="hero relative overflow-hidden">
+      <div class="container mx-auto px-6 hero-grid grid md:grid-cols-2 gap-12 items-center">
+        <div class="hero-copy">
+          <p class="eyebrow text-cyan-500 font-bold tracking-widest text-sm mb-2">AI.SPIRE PROGRAM</p>
+          <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">Applied AI & <br><span class="text-cyan-400">ML Systems</span> Portfolio</h1>
+          <p class="intro text-gray-400 text-lg mb-8">
+            A portfolio focused on backend development, data engineering, and
+            production-ready AI systems.
+          </p>
 
-  <footer class="py-10 border-t border-white/5 text-center text-gray-500 text-sm">
-    <p>© 2026 Omar Al-akhras — Applied AI & ML Portfolio</p>
-  </footer>
+          <div class="hero-actions flex gap-4">
+            <a class="btn-primary" href="#contact">Contact Me</a>
+            <a class="border border-white/20 hover:bg-white/5 px-6 py-3 rounded-8 font-bold text-white transition-all" href="#analytics">View Work</a>
+          </div>
+        </div>
+
+        <div class="hero-panel bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-sm grid grid-cols-2 gap-6">
+          <div class="hero-stat">
+            <span class="stat-label block text-xs text-gray-500 uppercase mb-1">Focus Area</span>
+            <strong class="text-cyan-400">Applied AI & ML</strong>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-label block text-xs text-gray-500 uppercase mb-1">Track</span>
+            <strong>AI.SPIRE</strong>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-label block text-xs text-gray-500 uppercase mb-1">Background</span>
+            <strong>Computer Engineering</strong>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-label block text-xs text-gray-500 uppercase mb-1">Location</span>
+            <strong>Jordan</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+  <footer class="site-footer py-10 border-t border-white/5 text-center text-gray-500 text-sm">
+    <div class="container mx-auto">
+      <p>© 2026 Omar Al-akhras — Applied AI & ML Systems Portfolio</p>
+    </div>
+  </footer>
 </body>
 </html>
