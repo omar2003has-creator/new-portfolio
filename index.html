@@ -5,104 +5,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Omar Al-akhras | Software & AI Engineer Portfolio</title>
   <meta name="description" content="Software Engineer | AI & Machine Learning Specialist | Building Intelligent Systems" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
   <link rel="stylesheet" href="index.css" />
+
+  <style>
+    /* تنسيقات إضافية لضمان عدم حدوث تعارض قبل تحميل الملفات */
+    :root {
+      --neon-blue: #00d4ff;
+      --neon-purple: #b026ff;
+      --background: #0a0a0f;
+    }
+    body {
+      background-color: var(--background);
+      color: white;
+      margin: 0;
+      font-family: 'Rajdhani', sans-serif;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      min-height: 80vh;
+    }
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; text-align: center; }
+    }
+  </style>
 </head>
-<body class="theme-1">
+<body class="theme-1 overflow-x-hidden">
   
   <div class="page-bg" aria-hidden="true">
     <div class="grid"></div>
-    <div class="bg-scanline"></div>
+    <div class="bg-scanline fixed inset-0 z-50 pointer-events-none"></div>
   </div>
 
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <div class="top-links">
-        <a href="#" target="_blank">LinkedIn</a>
-        <a href="mailto:omar.alakhras@email.com">Email Me</a>
+  <header class="topbar w-full py-2 bg-black/50 border-b border-white/10 text-xs">
+    <div class="container mx-auto flex justify-between px-6">
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-cyan-400">LinkedIn</a>
+        <a href="mailto:omar.alakhras@email.com" class="hover:text-cyan-400">Email Me</a>
       </div>
-      <div class="top-links">
-        <a href="https://github.com/OmarAlakhras" target="_blank">GitHub</a>
-        <span>Ain Al-Basha, Jordan</span>
+      <div class="flex gap-4">
+        <a href="https://github.com/OmarAlakhras" class="hover:text-cyan-400">GitHub</a>
+        <span class="opacity-50 text-white">Ain Al-Basha, Jordan</span>
       </div>
     </div>
   </header>
 
-  <nav class="navbar">
-    <div class="container nav-inner">
-      <a class="brand" href="#home">
-        <span class="brand-icon"></span>
-        <span>Omar Al-akhras</span>
+  <nav class="navbar sticky top-0 z-40 bg-black/80 backdrop-blur-md border-b border-white/5 py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <a class="brand font-bold text-xl tracking-tighter" href="#home" style="font-family: 'Orbitron';">
+        <span class="text-cyan-500">OMAR</span> AL-AKHRAS
       </a>
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+      <div class="nav-links hidden md:flex gap-8 uppercase text-sm font-semibold tracking-widest">
+        <a href="#home" class="hover:text-cyan-400 transition-colors">Home</a>
+        <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+        <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+        <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
       </div>
-      <a class="btn btn-small btn-primary" href="#projects">View Work</a>
+      <a class="btn bg-cyan-600 hover:bg-cyan-500 text-white px-4 py-2 rounded text-xs font-bold transition-all" href="#projects">VIEW WORK</a>
     </div>
   </nav>
 
   <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
+    <section class="hero py-20" id="home">
+      <div class="container mx-auto px-6 hero-grid">
         <div class="hero-copy">
-          <p class="section-kicker">SOFTWARE & AI ENGINEER</p>
-          <h1 class="glitch" data-text="BUILDING INTELLIGENT SYSTEMS">
-            Building <span>intelligent systems</span><br />
-            through code and data.
+          <p class="text-purple-500 font-bold tracking-[0.3em] text-sm mb-4">SOFTWARE & AI ENGINEER</p>
+          <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight" style="font-family: 'Orbitron';">
+            Building <span class="text-cyan-400">intelligent systems</span><br />
+            through code.
           </h1>
-          <p class="hero-text">
+          <p class="text-gray-400 text-lg mb-8 max-w-xl">
             I am <strong>Omar Al-akhras</strong>, a Software Engineering student at Al-Balqa Applied University. 
             I specialize in developing robust back-end systems and pursuing the future of AI and Machine Learning.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://github.com/OmarAlakhras" target="_blank">View GitHub</a>
-            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+          <div class="flex gap-4">
+            <a class="bg-purple-600 hover:bg-purple-500 text-white px-8 py-3 rounded font-bold shadow-[0_0_15px_rgba(176,38,255,0.4)]" href="https://github.com/OmarAlakhras">View GitHub</a>
+            <a class="border border-cyan-400 text-cyan-400 px-8 py-3 rounded font-bold hover:bg-cyan-400/10" href="#contact">Contact Me</a>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="visual-frame">
-            <div class="orbital"></div>
-            <div class="portrait-core">
-               <div style="background: #1a1a1a; width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Orbitron'; font-size: 3rem; color: var(--neon-blue);">OA</div>
+        <div class="hero-visual flex justify-center">
+          <div class="visual-frame relative w-80 h-80">
+            <div class="absolute inset-0 border-2 border-cyan-500/30 rounded-full animate-pulse"></div>
+            <div class="portrait-core w-full h-full bg-zinc-900 rounded-full flex items-center justify-center border-2 border-cyan-400 shadow-[0_0_30px_rgba(0,212,255,0.2)]">
+               <div class="text-6xl font-black text-cyan-400" style="font-family: 'Orbitron';">OA</div>
             </div>
-            <div class="badge badge-left">C++ / Python</div>
-            <div class="badge badge-right">AI / ML</div>
-            <div class="badge badge-bottom">Backend Dev</div>
+            <div class="absolute -top-4 -right-4 bg-black border border-purple-500 px-3 py-1 text-[10px] rounded uppercase font-bold text-purple-400">AI / ML</div>
+            <div class="absolute -bottom-4 -left-4 bg-black border border-cyan-500 px-3 py-1 text-[10px] rounded uppercase font-bold text-cyan-400">Backend Dev</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="projects section" id="projects">
-      <div class="container">
-        <div class="section-heading centered">
-          <p class="section-kicker">FEATURED WORK</p>
-          <h2>Technical Projects</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>Simplified Banking System</h3>
-            <p>Developed a backend system for managing financial accounts and SQL databases.</p>
-            <div class="chips"><span>C# / C++</span><span>SQL</span></div>
-          </article>
-          <article class="project-card">
-            <h3>Public Transit Data Pipeline</h3>
-            <p>Cleaned transit data and created analytical visualizations for ridership trends.</p>
-            <div class="chips"><span>Python</span><span>Data Science</span></div>
-          </article>
-        </div>
+    <section class="projects py-20 bg-zinc-900/30" id="projects">
+      <div class="container mx-auto px-6 text-center mb-12">
+        <p class="text-cyan-400 font-bold tracking-widest text-sm uppercase">Featured Work</p>
+        <h2 class="text-4xl font-bold mt-2" style="font-family: 'Orbitron';">Technical Projects</h2>
+      </div>
+      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-8">
+        <article class="bg-zinc-800/50 p-8 border border-white/5 rounded hover:border-purple-500 transition-all group">
+          <h3 class="text-xl font-bold mb-4 group-hover:text-purple-400 transition-colors">Simplified Banking System</h3>
+          <p class="text-gray-400 mb-6 italic">Developed a backend system for managing financial accounts and SQL databases.</p>
+          <div class="flex gap-2">
+            <span class="bg-zinc-900 px-3 py-1 text-xs rounded border border-white/10 text-gray-300">C# / C++</span>
+            <span class="bg-zinc-900 px-3 py-1 text-xs rounded border border-white/10 text-gray-300">SQL</span>
+          </div>
+        </article>
+        <article class="bg-zinc-800/50 p-8 border border-white/5 rounded hover:border-cyan-500 transition-all group">
+          <h3 class="text-xl font-bold mb-4 group-hover:text-cyan-400 transition-colors">Public Transit Data Pipeline</h3>
+          <p class="text-gray-400 mb-6 italic">Cleaned transit data and created analytical visualizations for ridership trends.</p>
+          <div class="flex gap-2">
+            <span class="bg-zinc-900 px-3 py-1 text-xs rounded border border-white/10 text-gray-300">Python</span>
+            <span class="bg-zinc-900 px-3 py-1 text-xs rounded border border-white/10 text-gray-300">Data Science</span>
+          </div>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
+  <footer class="py-10 border-t border-white/5 text-center text-gray-500 text-sm">
+    <div class="container mx-auto">
       <p>© 2026 Omar Al-akhras — Software & AI Portfolio</p>
     </div>
   </footer>
