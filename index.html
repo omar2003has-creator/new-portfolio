@@ -1,261 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Omar Al-akhras | Applied AI & ML Systems Portfolio</title>
-  <meta name="description" content="Applied AI & ML Systems Portfolio - AI.SPIRE Program" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omar Al-akhras | Applied AI & ML Systems Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0f; color: white; }
+        .orbitron { font-family: 'Orbitron', sans-serif; }
+        .hero-glow { background: radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 70%); }
+    </style>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <div class="brand">
-        <span class="brand-mark"></span>
-        <span>Omar Al-akhras</span>
-      </div>
+<body class="bg-[#0a0a0f] selection:bg-cyan-500/30">
 
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#foundations">Foundations</a>
-        <a href="#analytics">Analytics</a>
-        <a href="#pipelines">Pipelines & ML</a>
-        <a href="#dashboards">Dashboards</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <nav class="sticky top-0 z-50 bg-[#0a0a0f]/80 backdrop-blur-md border-b border-white/5 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-3 h-3 bg-cyan-500 rounded-full animate-pulse"></div>
+                <span class="orbitron text-xl font-bold tracking-tighter">Omar Al-akhras</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">AI.SPIRE Program</p>
-          <h1>Applied AI &amp; ML Systems Portfolio</h1>
-          <p class="subtitle">
-            Omar Al-akhras | Applied AI &amp; ML Systems Portfolio
-          </p>
-          <p class="intro">
-            A portfolio focused on backend development, data engineering, and
-            production-ready AI systems.
-          </p>
+    <main>
+        <section id="home" class="relative min-h-[90vh] flex items-center overflow-hidden hero-glow">
+            <div class="absolute top-20 left-1/4 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full"></div>
+            
+            <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+                <div class="hero-copy">
+                    <p class="text-cyan-500 font-bold tracking-[0.2em] text-xs mb-4 uppercase">AI.SPIRE Program Participant</p>
+                    <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] mb-6">
+                        Building <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent italic">real-world</span> AI systems.
+                    </h1>
+                    <p class="text-gray-400 text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+                        I am <strong>Omar Al-akhras</strong>, focusing on backend development, data engineering, and production-ready AI systems.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://github.com/omar2003has-creator" class="px-8 py-4 bg-cyan-500 text-black font-bold rounded-xl hover:bg-cyan-400 transition-all shadow-[0_0_20px_rgba(6,182,212,0.3)]">View GitHub</a>
+                        <a href="#contact" class="px-8 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-xl hover:bg-white/10 transition-all">Contact Me</a>
+                    </div>
+                    
+                    <div class="mt-16 flex gap-6">
+                        <div class="bg-white/5 border border-white/10 p-4 rounded-2xl backdrop-blur-sm min-w-[140px]">
+                            <p class="text-[10px] text-gray-500 uppercase font-bold mb-1">Role</p>
+                            <p class="text-sm font-bold">ML / AI Engineer</p>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 p-4 rounded-2xl backdrop-blur-sm min-w-[140px]">
+                            <p class="text-[10px] text-gray-500 uppercase font-bold mb-1">Focus</p>
+                            <p class="text-sm font-bold italic">Data & Models</p>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Contact</a>
-            <a class="btn btn-secondary" href="#analytics">View Work</a>
-          </div>
-        </div>
+                <div class="relative flex justify-center items-center">
+                    <div class="relative w-72 h-72 md:w-96 md:h-96 flex justify-center items-center">
+                        <div class="absolute inset-0 border border-white/5 rounded-full"></div>
+                        <div class="absolute inset-10 border border-white/10 rounded-full"></div>
+                        
+                        <div class="w-48 h-48 md:w-64 md:h-64 bg-[#111] border-2 border-cyan-500/50 rounded-full flex items-center justify-center shadow-[0_0_50px_rgba(6,182,212,0.2)] overflow-hidden">
+                           <span class="orbitron text-6xl md:text-8xl text-cyan-500 opacity-80">OA</span>
+                        </div>
+                        
+                        <div class="absolute top-0 right-0 bg-[#0a0a0f] border border-white/10 px-4 py-1 rounded-full text-[10px] font-bold">Data + Models</div>
+                        <div class="absolute top-1/2 -left-8 bg-[#0a0a0f] border border-white/10 px-4 py-1 rounded-full text-[10px] font-bold">ML Systems</div>
+                        <div class="absolute bottom-4 right-1/4 bg-[#0a0a0f] border border-white/10 px-4 py-1 rounded-full text-[10px] font-bold">Real-World Projects</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="hero-panel">
-          <div class="hero-stat">
-            <span class="stat-label">Focus Area</span>
-            <strong>Applied AI &amp; ML</strong>
-          </div>
-          <div class="hero-stat">
-            <span class="stat-label">Track</span>
-            <strong>AI.SPIRE Program</strong>
-          </div>
-          <div class="hero-stat">
-            <span class="stat-label">Background</span>
-            <strong>Computer Engineering</strong>
-          </div>
-          <div class="hero-stat">
-            <span class="stat-label">Location</span>
-            <strong>Jordan</strong>
-          </div>
-        </div>
-      </div>
-    </section>
+        <section id="projects" class="py-24 bg-[#0c0c14]">
+            <div class="container mx-auto px-6">
+                <div class="mb-16">
+                    <h2 class="orbitron text-3xl font-bold mb-4 italic text-cyan-400 uppercase tracking-tighter">Featured Work</h2>
+                    <p class="text-gray-500">Selected projects from my AI.SPIRE journey.</p>
+                </div>
 
-    <section class="section" id="about">
-      <div class="container section-grid">
-        <div class="section-heading">
-          <p class="section-tag">About Me</p>
-          <h2>Engineering mindset with practical AI direction.</h2>
-        </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <article class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:border-cyan-500/50 transition-all group">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="text-[10px] font-bold text-cyan-500 bg-cyan-500/10 px-3 py-1 rounded-full">SQL & Data</span>
+                            <a href="https://github.com/omar2003has-creator/SQL-Murder-Mystery" class="text-gray-500 hover:text-white transition italic text-xs">View Repo</a>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-cyan-400 transition">SQL Murder Mystery</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Investigative data analysis using complex SQL queries to solve a simulated crime case.</p>
+                        <div class="flex gap-2">
+                            <span class="text-[10px] text-gray-500 border border-white/10 px-2 py-1 rounded-md">SQLite</span>
+                            <span class="text-[10px] text-gray-500 border border-white/10 px-2 py-1 rounded-md">Data Analysis</span>
+                        </div>
+                    </article>
 
-        <div class="content-card">
-          <p>
-            I am a Computer Engineering graduate from Al-Balqa' Applied University (FET) in Jordan.
-          </p>
-          <p>
-            Currently, I am a participant in the AI.SPIRE program, focusing on backend development,
-            data engineering, and production-ready AI systems.
-          </p>
-        </div>
-      </div>
-    </section>
+                    <article class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:border-cyan-500/50 transition-all group">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="text-[10px] font-bold text-blue-500 bg-blue-500/10 px-3 py-1 rounded-full">Engineering</span>
+                            <a href="https://github.com/LevelUp-Applied-AI/m3-i3-etl-pipeline-omar2003has-creator" class="text-gray-500 hover:text-white transition italic text-xs">View Repo</a>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-blue-400 transition">ETL Data Pipeline</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Building a robust pipeline to process transit ridership data from raw source to analytics.</p>
+                        <div class="flex gap-2">
+                            <span class="text-[10px] text-gray-500 border border-white/10 px-2 py-1 rounded-md">Python</span>
+                            <span class="text-[10px] text-gray-500 border border-white/10 px-2 py-1 rounded-md">Pandas</span>
+                        </div>
+                    </article>
 
-    <section class="section section-alt" id="foundations">
-      <div class="container">
-        <div class="section-heading section-heading-wide">
-          <p class="section-tag">Foundations &amp; Engineering</p>
-          <h2>Core engineering preparation</h2>
-        </div>
+                    <article class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:border-cyan-500/50 transition-all group">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="text-[10px] font-bold text-purple-500 bg-purple-500/10 px-3 py-1 rounded-full">Visualization</span>
+                            <a href="https://github.com/omar2003has-creator/m4-s2" class="text-gray-500 hover:text-white transition italic text-xs">View Repo</a>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-purple-400 transition">KPI Dashboard</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Shared chart gallery and descriptive analytics dashboard for market performance.</p>
+                        <div class="flex gap-2">
+                            <span class="text-[10px] text-gray-500 border border-white/10 px-2 py-1 rounded-md">Plotly</span>
+                            <span class="text-[10px] text-gray-500 border border-white/10 px-2 py-1 rounded-md">Analytics</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <div class="card-grid two-cols">
-          <article class="info-card">
-            <h3>Engineering Prework</h3>
-            <p>Foundational engineering tasks and environment setup.</p>
-          </article>
+        <section id="contact" class="py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="orbitron text-4xl font-extrabold mb-8 italic">Get in Touch</h2>
+                <div class="flex flex-wrap justify-center gap-8 text-gray-400">
+                    <a href="mailto:omar2003has@gmail.com" class="hover:text-cyan-400 transition">omar2003has@gmail.com</a>
+                    <span class="hidden md:block">|</span>
+                    <a href="tel:0781107240" class="hover:text-cyan-400 transition">0781107240</a>
+                    <span class="hidden md:block">|</span>
+                    <span>Jordan</span>
+                </div>
+            </div>
+        </section>
+    </main>
 
-          <article class="info-card">
-            <h3>Git Workflows</h3>
-            <p>Professional branching and PR workflows.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+    <footer class="py-10 border-t border-white/5 text-center text-gray-600 text-[10px] uppercase font-bold tracking-widest">
+        © 2026 Omar Al-akhras — Applied AI & ML Systems Portfolio
+    </footer>
 
-    <section class="section" id="analytics">
-      <div class="container">
-        <div class="section-heading section-heading-wide">
-          <p class="section-tag">Data Analytics &amp; SQL</p>
-          <h2>Analysis and database work</h2>
-        </div>
-
-        <div class="card-grid three-cols">
-          <article class="info-card">
-            <h3>SQL Fundamentals</h3>
-            <p>Relational database design and advanced querying.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>SQL Murder Mystery</h3>
-            <p>Solved a complex SQL-based data mystery.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Descriptive Analytics</h3>
-            <p>Deep-dive analytics on various datasets.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="pipelines">
-      <div class="container">
-        <div class="section-heading section-heading-wide">
-          <p class="section-tag">Data Pipelines &amp; ML</p>
-          <h2>Data movement and model foundations</h2>
-        </div>
-
-        <div class="card-grid three-cols">
-          <article class="info-card">
-            <h3>ETL Data Pipeline</h3>
-            <p>Complete ETL pipeline for transit data ridership.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Time Series Analytics</h3>
-            <p>Analyzing time-dependent patterns and trends.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>PyTorch Fundamentals</h3>
-            <p>Neural network training loops and tensor operations.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="dashboards">
-      <div class="container">
-        <div class="section-heading section-heading-wide">
-          <p class="section-tag">Dashboards &amp; Visualization</p>
-          <h2>Visual systems and reporting</h2>
-        </div>
-
-        <div class="card-grid two-cols">
-          <article class="info-card">
-            <h3>KPI Dashboard</h3>
-            <p>Comprehensive dashboard for monitoring key metrics.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Shared Chart Gallery</h3>
-            <p>Advanced visualization components (Honors Track).</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="future">
-      <div class="container">
-        <div class="section-heading section-heading-wide">
-          <p class="section-tag">Future Modules</p>
-          <h2>Upcoming work</h2>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div>
-              <h3>Retrieval &amp; Knowledge Graphs</h3>
-              <p>Upcoming</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div>
-              <h3>Deployment &amp; API Development</h3>
-              <p>Upcoming</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div>
-              <h3>Capstone Project</h3>
-              <p>Coming Soon</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="contact-panel">
-          <div class="section-heading section-heading-wide">
-            <p class="section-tag">Contact &amp; Links</p>
-            <h2>Get in touch</h2>
-          </div>
-
-          <div class="contact-grid">
-            <div class="contact-card">
-              <h3>GitHub</h3>
-              <p>omar2003has-creator</p>
-            </div>
-
-            <div class="contact-card">
-              <h3>LinkedIn</h3>
-              <p>Omar Alakhras Profile</p>
-            </div>
-
-            <div class="contact-card">
-              <h3>Email</h3>
-              <p>omar2003has@gmail.com</p>
-            </div>
-
-            <div class="contact-card">
-              <h3>Phone</h3>
-              <p>0781107240</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Omar Al-akhras — Applied AI &amp; ML Systems Portfolio</p>
-    </div>
-  </footer>
 </body>
 </html>
