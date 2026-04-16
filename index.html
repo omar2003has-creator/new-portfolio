@@ -7,255 +7,150 @@
   <meta name="description" content="Applied AI & ML Systems Portfolio - AI.SPIRE Program" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <div class="brand">
-        <span class="brand-mark"></span>
-        <span>Omar Al-akhras</span>
-      </div>
+<body class="theme-1">
+  <div class="loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-text">Omar Al-akhras</div>
+    </div>
+  </div>
 
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#foundations">Foundations</a>
-        <a href="#analytics">Analytics</a>
-        <a href="#pipelines">Pipelines & ML</a>
-        <a href="#dashboards">Dashboards</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="top-links">
+        <a href="https://github.com/omar2003has-creator" target="_blank">GitHub</a>
+        <a href="mailto:omar2003has@gmail.com">omar2003has@gmail.com</a>
+      </div>
+      <div class="top-links">
+        <span>Jordan</span>
+        <span>0781107240</span>
+      </div>
     </div>
   </header>
 
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">
+        <span class="brand-icon"></span>
+        <span>Omar Al-akhras</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
   <main>
-    <section class="hero">
+    <section class="hero reveal" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">AI.SPIRE Program</p>
-          <h1>Applied AI &amp; ML Systems Portfolio</h1>
-          <p class="subtitle">
-            Omar Al-akhras | Applied AI &amp; ML Systems Portfolio
+          <p class="section-kicker">AI.SPIRE PROGRAM</p>
+          <h1>Building <span>Applied AI & ML Systems</span> with practical execution.</h1>
+          <p class="hero-text">
+            I am <strong>Omar Al-akhras</strong>, focusing on backend development, data engineering, and production-ready AI systems.
           </p>
-          <p class="intro">
-            A portfolio focused on backend development, data engineering, and
-            production-ready AI systems.
-          </p>
-
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Contact</a>
-            <a class="btn btn-secondary" href="#analytics">View Work</a>
+            <a class="btn btn-primary" href="https://github.com/omar2003has-creator">View GitHub</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
           </div>
         </div>
-
-        <div class="hero-panel">
-          <div class="hero-stat">
-            <span class="stat-label">Focus Area</span>
-            <strong>Applied AI &amp; ML</strong>
-          </div>
-          <div class="hero-stat">
-            <span class="stat-label">Track</span>
-            <strong>AI.SPIRE Program</strong>
-          </div>
-          <div class="hero-stat">
-            <span class="stat-label">Background</span>
-            <strong>Computer Engineering</strong>
-          </div>
-          <div class="hero-stat">
-            <span class="stat-label">Location</span>
-            <strong>Jordan</strong>
+        <div class="hero-visual reveal-card">
+          <div class="visual-frame">
+            <div class="portrait-core" style="background: #111; display: flex; align-items: center; justify-content: center; color: #00d4ff; font-weight: 800; font-size: 2.5rem; border-radius: 50%;">OA</div>
+            <div class="badge badge-left">Backend Dev</div>
+            <div class="badge badge-right">Data Pipelines</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="container section-grid">
-        <div class="section-heading">
-          <p class="section-tag">About Me</p>
-          <h2>Engineering mindset with practical AI direction.</h2>
-        </div>
-
-        <div class="content-card">
-          <p>
-            I am a Computer Engineering graduate from Al-Balqa' Applied University (FET) in Jordan.
-          </p>
-          <p>
-            Currently, I am a participant in the AI.SPIRE program, focusing on backend development,
-            data engineering, and production-ready AI systems.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="foundations">
+    <section class="projects section reveal" id="projects">
       <div class="container">
-        <div class="section-heading section-heading-wide">
-          <p class="section-tag">Foundations &amp; Engineering</p>
-          <h2>Core engineering preparation</h2>
+        <div class="section-heading centered">
+          <p class="section-kicker">PORTFOLIO</p>
+          <h2>Featured Work</h2>
         </div>
-
-        <div class="card-grid two-cols">
-          <article class="info-card">
-            <h3>Engineering Prework</h3>
-            <p>Foundational engineering tasks and environment setup.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Git Workflows</h3>
-            <p>Professional branching and PR workflows.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="analytics">
-      <div class="container">
-        <div class="section-heading section-heading-wide">
-          <p class="section-tag">Data Analytics &amp; SQL</p>
-          <h2>Analysis and database work</h2>
-        </div>
-
-        <div class="card-grid three-cols">
-          <article class="info-card">
-            <h3>SQL Fundamentals</h3>
-            <p>Relational database design and advanced querying.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>SQL Murder Mystery</h3>
-            <p>Solved a complex SQL-based data mystery.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Descriptive Analytics</h3>
-            <p>Deep-dive analytics on various datasets.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="pipelines">
-      <div class="container">
-        <div class="section-heading section-heading-wide">
-          <p class="section-tag">Data Pipelines &amp; ML</p>
-          <h2>Data movement and model foundations</h2>
-        </div>
-
-        <div class="card-grid three-cols">
-          <article class="info-card">
-            <h3>ETL Data Pipeline</h3>
-            <p>Complete ETL pipeline for transit data ridership.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Time Series Analytics</h3>
-            <p>Analyzing time-dependent patterns and trends.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>PyTorch Fundamentals</h3>
-            <p>Neural network training loops and tensor operations.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="dashboards">
-      <div class="container">
-        <div class="section-heading section-heading-wide">
-          <p class="section-tag">Dashboards &amp; Visualization</p>
-          <h2>Visual systems and reporting</h2>
-        </div>
-
-        <div class="card-grid two-cols">
-          <article class="info-card">
-            <h3>KPI Dashboard</h3>
-            <p>Comprehensive dashboard for monitoring key metrics.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Shared Chart Gallery</h3>
-            <p>Advanced visualization components (Honors Track).</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="future">
-      <div class="container">
-        <div class="section-heading section-heading-wide">
-          <p class="section-tag">Future Modules</p>
-          <h2>Upcoming work</h2>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div>
-              <h3>Retrieval &amp; Knowledge Graphs</h3>
-              <p>Upcoming</p>
+        <div class="project-grid">
+          <article class="project-card tilt-card reveal-card">
+            <div class="project-top">
+              <span class="project-tag">Analytics</span>
+              <a href="https://github.com/omar2003has-creator/SQL-Murder-Mystery">View Repo</a>
             </div>
-          </div>
+            <h3>SQL Murder Mystery Investigation</h3>
+            <p>Solved a complex data mystery using advanced SQL querying.</p>
+            <div class="chips"><span>SQL</span><span>PostgreSQL</span></div>
+          </article>
 
-          <div class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div>
-              <h3>Deployment &amp; API Development</h3>
-              <p>Upcoming</p>
+          <article class="project-card tilt-card reveal-card">
+            <div class="project-top">
+              <span class="project-tag">Data Engineering</span>
+              <a href="https://github.com/LevelUp-Applied-AI/m3-i3-etl-pipeline-omar2003has-creator">View Repo</a>
             </div>
-          </div>
+            <h3>Public Transit ETL Pipeline</h3>
+            <p>Built an automated pipeline for transit ridership data processing.</p>
+            <div class="chips"><span>Python</span><span>ETL</span><span>Pandas</span></div>
+          </article>
 
-          <div class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div>
-              <h3>Capstone Project</h3>
-              <p>Coming Soon</p>
+          <article class="project-card tilt-card reveal-card">
+            <div class="project-top">
+              <span class="project-tag">Visualization</span>
+              <a href="https://github.com/LevelUp-Applied-AI/m4-i4-kpi-dashboard-omar2003has-creator">View Repo</a>
             </div>
+            <h3>Amman Digital Market Dashboard</h3>
+            <p>Designed a KPI framework for monitoring market performance.</p>
+            <div class="chips"><span>Analytics</span><span>KPI Design</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section reveal" id="about">
+      <div class="container about-grid">
+        <div class="about-left">
+          <div class="section-heading">
+            <p class="section-kicker">ABOUT ME</p>
+            <h2>Engineering mindset with practical AI direction.</h2>
+          </div>
+          <p>I am a Computer Engineering graduate from Al-Balqa’ Applied University (FET) in Jordan.</p>
+          <p>Currently, I am deep-diving into AI systems through the AI.SPIRE program.</p>
+        </div>
+        <div class="about-right reveal-card">
+          <div class="stats-card">
+            <div class="stat-box"><strong>B1</strong><span>English Level</span></div>
+            <div class="stat-box"><strong>AI</strong><span>Applied Focus</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="contact section reveal" id="contact">
       <div class="container">
         <div class="contact-panel">
-          <div class="section-heading section-heading-wide">
-            <p class="section-tag">Contact &amp; Links</p>
-            <h2>Get in touch</h2>
+          <div class="section-heading">
+            <h2>Get in touch.</h2>
           </div>
-
-          <div class="contact-grid">
-            <div class="contact-card">
-              <h3>GitHub</h3>
-              <p>omar2003has-creator</p>
-            </div>
-
-            <div class="contact-card">
-              <h3>LinkedIn</h3>
-              <p>Omar Alakhras Profile</p>
-            </div>
-
-            <div class="contact-card">
-              <h3>Email</h3>
-              <p>omar2003has@gmail.com</p>
-            </div>
-
-            <div class="contact-card">
-              <h3>Phone</h3>
-              <p>0781107240</p>
-            </div>
+          <div class="contact-links">
+            <a class="contact-item" href="mailto:omar2003has@gmail.com">Email: omar2003has@gmail.com</a>
+            <a class="contact-item" href="#">LinkedIn: Omar Alakhras Profile</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <p>© 2026 Omar Al-akhras — Applied AI &amp; ML Systems Portfolio</p>
+      <p>© 2026 Omar Al-akhras — Applied AI & ML Systems Portfolio</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
